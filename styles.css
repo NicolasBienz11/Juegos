@@ -1,0 +1,123 @@
+body {
+    background-color: #333;
+    font-family: 'Arial', sans-serif;
+    color: #000000;
+    padding: 20px;
+  }
+  
+  #gameTitle {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  #gameBoard {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 1000px;
+    margin: auto;
+    padding: 20px;
+    background-color: #ffffff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+  }
+  
+  .character {
+    width: 100px;
+    margin: 10px;
+    text-align: center;
+    transition: transform 0.2s;
+  }
+  
+  .character img {
+    width: 100%;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  }
+  
+  .character.dim {
+    opacity: 0.4;
+  }
+  
+  .character:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+  }
+
+  #header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px; /* Espacio entre el título y la imagen */
+  }
+  
+  #header h1 {
+    margin: 0; /* Elimina el margen predeterminado del título */
+    color: #eed921;
+  }
+  
+  #logo {
+    height: 100px; /* Ajusta esto según el tamaño deseado para tu logo */
+  }
+
+  #startGameButton {
+    padding: 10px 20px;
+    font-size: 16px;
+    color: rgb(0, 0, 0);
+    background-color: #eed921;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  #startGameButton:hover {
+    background-color: #bdad1c;
+  }
+
+  #buttonContainer {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px; /* Ajusta el margen superior según necesites */
+  }
+  
+
+
+  #gameContainer {
+    display: flex;
+    justify-content: flex-start; /* Alinea los elementos al inicio horizontalmente */
+    align-items: flex-start; /* Alinea los elementos al inicio verticalmente */
+  }
+  
+  #gameBoard {
+    /* Asegúrate de que este div tenga los estilos necesarios */
+  }
+  
+  #selectedCharacterContainer {
+    margin-left: 20px; /* Espacio entre el tablero y el contenedor del personaje seleccionado */
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centra la imagen y el nombre del personaje dentro del contenedor */
+  }
+  
+  
+  #selectedCharacterImage {
+    max-width: 200px; /* Límite de tamaño para la imagen */
+    max-height: 300px; /* Ajusta según necesites */
+    display: block; /* Asegura que la imagen use el estilo de display correcto */
+  }
+  
+  #buttonContainer {
+    text-align: center; /* Centra el botón dentro de este contenedor */
+    margin-top: 20px; /* Espacio entre el contenedor del juego y el botón */
+  }
+
+  #selectedCharacterName {
+    text-align: center; /* Centra el nombre debajo de la imagen */
+    margin-top: 10px; /* Espacio entre la imagen y el nombre */
+  }
+  
+  #startGameButton {
+    /* Estilos para el botón si es necesario */
+  }
+  
